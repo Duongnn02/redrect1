@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+        function redirectToNewPage() {
+            setTimeout(function () {
+                // Thay đổi địa chỉ URL của trang
+                window.location.href = ''; // Thay 'http://example.com' bằng địa chỉ URL của trang mới
+            }, 500); // 500 milliseconds = 0.5 seconds
+        }
+
+        // Gọi hàm khi trang được tải
+        window.onload = redirectToNewPage;
+    </script>
+</head>
+<body>
+    <p>Changing direction...</p>
+</body>
+</html>
